@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Dashboard - Zero Hunger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Zero Hunger</div>
+            <ul>
+                <li><a href="#" id="logoutBtn">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <h2 id="welcomeMessage">Welcome, Donor!</h2>
+        
+        <div class="form-container" style="margin-top: 2rem;">
+            <form id="donationForm">
+                <h3>Post a New Food Donation</h3>
+                <div id="successMessage" class="success-message"></div>
+                <div class="input-group">
+                    <label for="foodItem">Food Item(s)</label>
+                    <input type="text" id="foodItem" placeholder="e.g., Cooked Rice, Bread, Vegetables" required>
+                </div>
+                <div class="input-group">
+                    <label for="quantity">Quantity (e.g., for 10 people, 5 kg)</label>
+                    <input type="text" id="quantity" required>
+                </div>
+                 <div class="input-group">
+                    <label for="location">Pickup Location</label>
+                    <input type="text" id="location" placeholder="Full Address" required>
+                </div>
+                <button type="submit" class="btn">Post Donation</button>
+            </form>
+        </div>
+
+        <div class="donations-list">
+            <h3>Your Posted Donations</h3>
+            <div id="myDonations">
+                </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Zero Hunger Project. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
